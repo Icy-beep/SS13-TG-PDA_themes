@@ -8,6 +8,7 @@
 import './styles/main.scss';
 import './styles/themes/KSSP.scss'; // BANDASTATION ADDITION - KSSP PDA theme
 import './styles/themes/TSF.scss'; // BANDASTATION ADDITION - TSF PDA theme
+import './styles/themes/SKRELLIAN_EMPIRE.scss'; // BANDASTATION ADDITION - SKRELLIAN_EMPIRE PDA theme
 import './styles/themes/paper220.scss';
 import './styles/themes/ss220.scss';
 
