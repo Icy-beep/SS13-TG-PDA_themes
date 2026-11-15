@@ -149,10 +149,10 @@
 // BANDASTATION ADDITION END
 
 // BANDASTATION ADDITION START - SKRELLIAN_EMPIRE PDA theme
-#define PDA_THEME_SKRELLIAN_EMPIRE_NAME "Скреллианская Империя"
+#define PDA_THEME_SKRELLIAN_EMPIRE_NAME "Скреллианский Империум"
 // BANDASTATION ADDITION END
 // BANDASTATION ADDITION START - ELYSIUM PDA theme
-#define PDA_THEME_ELYSIUM_NAME "Республика Эллизиум"
+#define PDA_THEME_ELYSIUM_NAME "Республика Элизиум"
 // BANDASTATION ADDITION END
 ///List of PDA themes that are accessible to everyone by default.
 GLOBAL_LIST_INIT(default_pda_themes, list(
