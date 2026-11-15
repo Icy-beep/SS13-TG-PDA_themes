@@ -1,10 +1,4 @@
-/**
- * TSF PDA theme for BandaStation.
- * Retro buttons, subtle terminal effects, and a TSF emblem watermark.
- */
-
 :root.theme-TSF {
-  // Base colors.
   --color-base: hsl(205, 55%, 9%);
   --color-secondary: hsl(205, 45%, 16%);
   --color-primary: #1f91dc;
@@ -13,29 +7,20 @@
   --color-section: hsla(205, 60%, 3%, 0.4);
   --color-label: hsl(205, 30%, 72%);
   --base-gradient-spread: 1;
-
-  // TSF blue/yellow accents.
   --color-action: #1f91dc;
   --section-title-color: #ffff00;
   --section-separator-color: #1f91dc;
   --tab-color-selected: #ffff00;
-
-  // Borders.
   --color-border: hsla(205, 80%, 65%, 0.18);
   --border-primary-saturation: 90;
   --border-primary-lightness: 62;
   --border-primary-alpha: 0.7;
-
-  // Components.
   --button-background-default: hsl(205, 75%, 38%);
   --button-background-selected: #1f91dc;
   --input-background-lightness: 6;
   --tooltip-background-lightness: 13;
   --progress-bar-background: hsla(0, 0%, 0%, 0.45);
   --candystripe-odd: hsla(205, 80%, 50%, 0.08);
-
-  // Subtle CRT texture and a darkened, transparent TSF emblem.
-  // Rspack inlines CSS-referenced SVGs during the build.
   .Layout__content {
     background-image:
       repeating-linear-gradient(
@@ -59,8 +44,6 @@
     background-position: center;
     background-repeat: repeat, no-repeat, no-repeat, no-repeat;
   }
-
-  // Federation device header: a thin illuminated edge, no strong glow.
   .NtosWindow__header {
     background-color: hsla(205, 70%, 5%, 0.85);
     box-shadow:
@@ -68,8 +51,6 @@
       inset 0 -1px 0 hsla(52, 100%, 50%, 0.35),
       0 1px 6px rgba(0, 0, 0, 0.24);
   }
-
-  // Retro: raised physical buttons, pressed state and restrained blue hover.
   .Button:not(.Button--color--transparent):not(.Button--disabled) {
     box-shadow:
       inset 1px 1px 0 rgba(174, 219, 246, 0.42),
@@ -96,13 +77,9 @@
         inset -1px -1px 0 rgba(31, 145, 220, 0.24);
     }
   }
-
-  // Transparent icon buttons should retain their usual TGUI semantics.
   .Button--color--transparent:hover:not(.Button--disabled) {
     box-shadow: inset 0 0 0 1px rgba(31, 145, 220, 0.40);
   }
-
-  // Retro: recessed panels. Reset nested sections to avoid double frames.
   .Section {
     border: 1px solid rgba(31, 145, 220, 0.26);
     box-shadow:
@@ -122,14 +99,10 @@
       transparent 85%
     );
   }
-
-  // Terminal: glow only on titles, not long messenger paragraphs.
   .Section__titleText {
     letter-spacing: 0.035em;
     text-shadow: 0 0 4px rgba(255, 255, 0, 0.24);
   }
-
-  // Selected tabs should read as a latched hardware control.
   .Tab {
     border: 1px solid rgba(31, 145, 220, 0.23);
     box-shadow: inset 1px 1px 0 rgba(31, 145, 220, 0.12);
@@ -146,8 +119,6 @@
       text-shadow: 0 0 3px rgba(255, 255, 0, 0.24);
     }
   }
-
-  // Retro: inputs should look recessed, with a subtle blue focus indication.
   .Input,
   .TextArea {
     box-shadow:
