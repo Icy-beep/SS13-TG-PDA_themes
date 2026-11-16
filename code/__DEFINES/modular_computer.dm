@@ -152,7 +152,7 @@
 #define PDA_THEME_ELYSIUM_NAME "Республика Элизиум"
 // BANDASTATION ADDITION END
 // BANDASTATION ADDITION START - FREEDOM PDA theme
-#define PDA_THEME_FREEDOM_NAME "Вольные сектора"
+#define PDA_THEME_FREEDOM_NAME "Вольные секторы"
 // BANDASTATION ADDITION END
 ///List of PDA themes that are accessible to everyone by default.
 GLOBAL_LIST_INIT(default_pda_themes, list(

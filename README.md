@@ -1,16 +1,16 @@
 # PDA-темы BandaStation
 
-Коллекция тем PDA для [BandaStation](https://github.com/ss220club/BandaStation), работающих через стандартную систему TGUI/Themeify без дополнительной игровой логики.
+Коллекция тем PDA для [[BandaStation](https://github.com/ss220club/BandaStation](https://github.com/SpaceStation220/Primera), работающих через стандартную систему TGUI/Themeify без дополнительной игровой логики.
 
 ## Доступные темы
 
-| Тема | Идентификатор | Оформление |
-| --- | --- | --- |
-| ТСФ | `TSF` | Синий и жёлтый, объёмные кнопки, CRT-фактура |
-| КССП | `KSSP` | Графит, бордовые акценты, металлические элементы |
-| Скреллианская Империя | `SKRELLIAN_EMPIRE` | Тёмная бирюза, мягкие блики, закруглённые элементы |
-| Республика Элизиум | `ELYSIUM` | Зелёная и золотая палитра, неоготический ретрофутуризм |
-| Вольные сектора | `FREEDOM` | Тёплый индустриальный ретрофутуризм, медь, механические детали |
+| Тема                  | Идентификатор      | Оформление                                                     |
+| --------------------- | ------------------ | -------------------------------------------------------------- |
+| ТСФ                   | `TSF`              | Синий и жёлтый, объёмные кнопки, CRT-фактура                   |
+| КССП                  | `KSSP`             | Графит, бордовые акценты, металлические элементы               |
+| Скреллианская Империя | `SKRELLIAN_EMPIRE` | Тёмная бирюза, мягкие блики, закруглённые элементы             |
+| Республика Элизиум    | `ELYSIUM`          | Зелёная и золотая палитра, неоготический ретрофутуризм         |
+| Вольные секторы       | `FREEDOM`          | Тёплый индустриальный ретрофутуризм, медь, механические детали |
 
 ## Структура репозитория
 
@@ -125,26 +125,26 @@
 </details>
 
 <details>
-<summary><strong>Вольные сектора</strong></summary>
+<summary><strong>Вольные секторы</strong></summary>
 
 ### Themeify
 
-<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121208.png" alt="Вольные сектора — Themeify" width="420">
+<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121208.png" alt="Вольные секторы — Themeify" width="420">
 
 ### Главное меню
 
-<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121215.png" alt="Вольные сектора — Главное меню" width="420">
+<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121215.png" alt="Вольные секторы — Главное меню" width="420">
 
 ### Software Hub
 
-<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121225.png" alt="Вольные сектора — Software Hub" width="420">
+<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121225.png" alt="Вольные секторы — Software Hub" width="420">
 
 ### Lifeline
 
-<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121235.png" alt="Вольные сектора — Lifeline" width="420">
+<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121235.png" alt="Вольные секторы — Lifeline" width="420">
 
 ### Shopping Network
 
-<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121250.png" alt="Вольные сектора — Shopping Network" width="420">
+<img src="screanshots/%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-16%20121250.png" alt="Вольные секторы — Shopping Network" width="420">
 
 </details>
