@@ -1,6 +1,6 @@
 # PDA-темы BandaStation
 
-Коллекция тем PDA для [[BandaStation](https://github.com/ss220club/BandaStation](https://github.com/SpaceStation220/Primera), работающих через стандартную систему TGUI/Themeify без дополнительной игровой логики.
+Коллекция тем PDA для [Primera](https://github.com/SpaceStation220/Primera), работающих через стандартную систему TGUI/Themeify без дополнительной игровой логики.
 
 ## Доступные темы
 
