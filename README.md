@@ -1,4 +1,4 @@
-# PDA-темы BandaStation
+# PDA-темы для SS13
 
 Коллекция тем PDA для [Primera](https://github.com/SpaceStation220/Primera).
 
