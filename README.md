@@ -1,6 +1,6 @@
 # PDA-темы BandaStation
 
-Коллекция тем PDA для [Primera](https://github.com/SpaceStation220/Primera), работающих через стандартную систему TGUI/Themeify без дополнительной игровой логики.
+Коллекция тем PDA для [Primera](https://github.com/SpaceStation220/Primera).
 
 ## Доступные темы
 
@@ -26,7 +26,6 @@
 
 ## Скриншоты
 
-Скриншоты сделаны в игре 16 ноября 2026 года. Нажмите на название темы, чтобы раскрыть галерею.
 
 <details>
 <summary><strong>ТСФ</strong></summary>
