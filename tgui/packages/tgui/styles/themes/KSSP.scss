@@ -1,6 +1,9 @@
 $kssp-emblem-dim: 0.80;
 
 :root.theme-KSSP {
+  --kssp-gold-rgb: 214, 190, 133;
+  --kssp-burgundy-rgb: 126, 45, 56;
+  --kssp-border-rgb: 170, 145, 98;
   --color-base: #101417;
   --color-secondary: #242a2f;
   --color-primary: #8e3944;
@@ -26,6 +29,9 @@ $kssp-emblem-dim: 0.80;
   --tooltip-background-lightness: 14;
   --progress-bar-background: rgba(0, 0, 0, 0.45);
   --candystripe-odd: rgba(210, 185, 124, 0.035);
+
+  --color-scrollbar-thumb: rgba(var(--kssp-gold-rgb), 0.36);
+  --color-scrollbar-base: var(--color-section);
 
   color: var(--color-text);
   .Layout__content {
@@ -66,14 +72,13 @@ $kssp-emblem-dim: 0.80;
       #4a232b 52%,
       #2d171d 100%
     );
-    border-bottom: 1px solid rgba(214, 190, 133, 0.38);
+    border-bottom: 1px solid rgba(var(--kssp-gold-rgb), 0.38);
     box-shadow:
       inset 0 1px 0 rgba(255, 235, 187, 0.10),
       0 1px 3px rgba(0, 0, 0, 0.28);
   }
   .Section {
     background-color: rgba(13, 17, 21, 0.72);
-    border: 1px solid rgba(170, 145, 98, 0.30);
     border-radius: 1px;
     box-shadow:
       inset 1px 1px 0 rgba(230, 223, 192, 0.05),
@@ -82,7 +87,6 @@ $kssp-emblem-dim: 0.80;
   }
 
   .Section .Section {
-    border: 0;
     box-shadow: none;
     background-color: transparent;
   }
@@ -91,20 +95,20 @@ $kssp-emblem-dim: 0.80;
     background-image:
       linear-gradient(
         90deg,
-        rgba(214, 190, 133, 0.72) 0 4px,
+        rgba(var(--kssp-gold-rgb), 0.72) 0 4px,
         transparent 4px 100%
       ),
       linear-gradient(
         90deg,
-        rgba(126, 45, 56, 0.62) 0%,
-        rgba(126, 45, 56, 0.22) 72%,
+        rgba(var(--kssp-burgundy-rgb), 0.62) 0%,
+        rgba(var(--kssp-burgundy-rgb), 0.22) 72%,
         transparent 100%
       );
     background-repeat: no-repeat, no-repeat;
     background-size: 100% 100%, 100% 100%;
     background-position: left top, left top;
-    border-bottom: 1px solid rgba(214, 190, 133, 0.18);
-    text-shadow: 0 0 4px rgba(214, 190, 133, 0.12);
+    border-bottom: 1px solid rgba(var(--kssp-gold-rgb), 0.18);
+    text-shadow: 0 0 4px rgba(var(--kssp-gold-rgb), 0.12);
   }
 
   .Section__titleText {
@@ -113,7 +117,7 @@ $kssp-emblem-dim: 0.80;
 
   .Divider,
   hr {
-    border-color: rgba(214, 190, 133, 0.14);
+    border-color: rgba(var(--kssp-gold-rgb), 0.14);
   }
 
   .LabeledList__label {
@@ -133,7 +137,7 @@ $kssp-emblem-dim: 0.80;
       box-shadow:
         inset 1px 1px 0 rgba(247, 243, 227, 0.34),
         inset -1px -1px 0 rgba(0, 0, 0, 0.50),
-        0 0 4px rgba(214, 190, 133, 0.14);
+        0 0 4px rgba(var(--kssp-gold-rgb), 0.14);
     }
 
     &:active,
@@ -198,14 +202,14 @@ $kssp-emblem-dim: 0.80;
 
   .Button--color--transparent:hover:not(.Button--disabled) {
     box-shadow:
-      inset 0 0 0 1px rgba(214, 190, 133, 0.30);
+      inset 0 0 0 1px rgba(var(--kssp-gold-rgb), 0.30);
   }
   .Input,
   .TextArea,
   .NumberInput__input {
     background-color: rgba(8, 12, 15, 0.88);
     color: var(--color-text);
-    border: 1px solid rgba(170, 145, 98, 0.24);
+    border: 1px solid rgba(var(--kssp-border-rgb), 0.24);
     box-shadow:
       inset 2px 2px 4px rgba(0, 0, 0, 0.52),
       inset 0 0 0 1px rgba(196, 167, 112, 0.12);
@@ -213,8 +217,8 @@ $kssp-emblem-dim: 0.80;
     &:focus-within {
       box-shadow:
         inset 2px 2px 4px rgba(0, 0, 0, 0.36),
-        0 0 0 1px rgba(214, 190, 133, 0.58),
-        0 0 5px rgba(214, 190, 133, 0.12);
+        0 0 0 1px rgba(var(--kssp-gold-rgb), 0.58),
+        0 0 5px rgba(var(--kssp-gold-rgb), 0.12);
     }
   }
 
@@ -224,33 +228,23 @@ $kssp-emblem-dim: 0.80;
   }
   .Tab,
   .Tabs__Tab {
-    border: 1px solid rgba(170, 145, 98, 0.22);
     border-radius: 1px;
-    box-shadow:
-      inset 1px 1px 0 rgba(222, 213, 183, 0.08);
-
-    &:hover:not(.Tab--selected):not(.Tabs__Tab--selected) {
-      box-shadow:
-        inset 0 0 0 1px rgba(214, 190, 133, 0.24);
-    }
   }
 
   .Tab--selected,
   .Tabs__Tab--selected {
-    border-color: rgba(214, 190, 133, 0.52);
     box-shadow:
-      inset 0 -2px 0 rgba(214, 190, 133, 0.68),
-      inset 1px 1px 0 rgba(0, 0, 0, 0.34);
-    text-shadow:
-      0 0 4px rgba(214, 190, 133, 0.18);
+      inset 0 -2px 0 rgba(var(--kssp-gold-rgb), 0.52),
+      inset 1px 1px 0 rgba(0, 0, 0, 0.20);
+    text-shadow: 0 0 3px rgba(var(--kssp-gold-rgb), 0.10);
   }
 
   .ProgressBar {
     background: rgba(0, 0, 0, 0.42);
-    border: 1px solid rgba(170, 145, 98, 0.24);
+    border: 1px solid rgba(var(--kssp-border-rgb), 0.24);
     box-shadow:
       inset 1px 1px 2px rgba(0, 0, 0, 0.62),
-      0 0 0 1px rgba(214, 190, 133, 0.04);
+      0 0 0 1px rgba(var(--kssp-gold-rgb), 0.04);
   }
 
   .ProgressBar__fill {
@@ -269,7 +263,7 @@ $kssp-emblem-dim: 0.80;
   .Tooltip,
   .Modal {
     background-color: rgba(17, 22, 26, 0.94);
-    border: 1px solid rgba(170, 145, 98, 0.24);
+    border: 1px solid rgba(var(--kssp-border-rgb), 0.24);
     color: var(--color-text);
   }
 
@@ -286,5 +280,16 @@ $kssp-emblem-dim: 0.80;
   .NoticeBox--success,
   .Message--success {
     border-left: 3px solid #7b9a63;
+  }
+
+  .Layout__content,
+  .Layout__content * {
+    scrollbar-width: thin;
+  }
+
+  .Layout__content::-webkit-scrollbar,
+  .Layout__content *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
   }
 }
