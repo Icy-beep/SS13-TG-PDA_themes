@@ -11,9 +11,10 @@
 #define PROGRAM_LAPTOP (1<<1)
 ///Can run on PDAs.
 #define PROGRAM_PDA (1<<2)
+
 /**
  * program_flags
- * Used by programs to tell what type of ModPC the program can run on.
+ * Used by programs to tell the ModPC any special functions it has.
  */
 ///If the program requires NTNet to be online for it to work.
 #define PROGRAM_REQUIRES_NTNET (1<<0)
@@ -27,6 +28,7 @@
 #define PROGRAM_HEADER (1<<4)
 ///The circuit ports of this program can be triggered even if the program is not open
 #define PROGRAM_CIRCUITS_RUN_WHEN_CLOSED (1<<5)
+
 //Program categories
 #define PROGRAM_CATEGORY_DEVICE "Инструменты"
 #define PROGRAM_CATEGORY_EQUIPMENT "Оборудование"
@@ -39,17 +41,19 @@
 
 ///The default amount a program should take in cell use.
 #define PROGRAM_BASIC_CELL_USE 2 WATTS
+
 ///This app grants a minor protection against being PDA bombed if installed.
 ///(can sometimes prevent it from being sent, while wasting a PDA bomb from the sender).
 #define DETOMATIX_RESIST_MINOR 1
-///This app grants a larger protection against being PDA bombed.
+///This app grants a larger protection against being PDA bombed if installed.
 ///(can sometimes prevent it from being sent, while wasting a PDA bomb from the sender).
 #define DETOMATIX_RESIST_MAJOR 2
-///This app gives a diminished protection against being PDA bombed.
+///This app gives a diminished protection against being PDA bombed if installed.
 #define DETOMATIX_RESIST_MALUS -4
+
 /**
- * NTNet transfer speeds, used by programs to tell how fast they can download/upload a file.
- * The define is how fast the program can download an app every program's process_tick.
+ * NTNet transfer speeds, used when downloading/uploading a file/program.
+ * The define is how fast it will download an app every program's process_tick.
  */
 ///Used for wireless devices with low signal.
 #define NTNETSPEED_LOWSIGNAL 0.5
@@ -57,32 +61,38 @@
 #define NTNETSPEED_HIGHSIGNAL 1
 ///Used for laptops with a high signal, or computers, which is connected regardless of z level.
 #define NTNETSPEED_ETHERNET 2
+
 /**
  * NTNet connection signals
- * Used to calculate the defines above from NTNet Downloader, this is how good a ModPC's signal is.
+ * Used to calculate the defines above from NTNet Downloader, this is how
+ * good a ModPC's signal is.
  */
 ///When you're away from the station/mining base and not on a console, you can't access the internet.
 #define NTNET_NO_SIGNAL 0
-///Low signal, so away from the station/mining base, but still connected
+///Low signal, so away from the station, but still connected
 #define NTNET_LOW_SIGNAL 1
 ///On station with good signal.
 #define NTNET_GOOD_SIGNAL 2
 ///Using a Computer or Laptop with good signal, ethernet-connected.
 #define NTNET_ETHERNET_SIGNAL 3
+
 /// The default ringtone of the Messenger app.
 #define MESSENGER_RINGTONE_DEFAULT "beep"
+
 /// The maximum length of the ringtone of the Messenger app.
 #define MESSENGER_RINGTONE_MAX_LENGTH 20
 
 ///how much paper it takes from the printer to create a canvas.
 #define CANVAS_PAPER_COST 10
 
-///how much paper it takes from the printer to take a photo.
+///how much paper it takes from the printer to create a photo.
 #define PHOTO_PAPER_COST 1
+
 /**
  * PDA Themes
  * For these to work, the defines must be defined in tgui/styles/themes/[define].scss
  */
+
 ///Default NtOS PDA theme
 #define PDA_THEME_NTOS "ntos"
 #define PDA_THEME_DARK_MODE "ntos_darkmode"
@@ -90,23 +100,15 @@
 #define PDA_THEME_SYNTH "ntos_synth"
 #define PDA_THEME_TERMINAL "ntos_terminal"
 #define PDA_THEME_BIRD "neutral"
-// BANDASTATION ADDITION START - KSSP PDA theme
 #define PDA_THEME_KSSP "KSSP"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - TSF PDA theme
 #define PDA_THEME_TSF "TSF"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - SKRELLIAN_EMPIRE PDA theme
 #define PDA_THEME_SKRELLIAN_EMPIRE "SKRELLIAN_EMPIRE"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - ELYSIUM PDA theme
 #define PDA_THEME_ELYSIUM "ELYSIUM"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - FREEDOM PDA theme
 #define PDA_THEME_FREEDOM "FREEDOM"
-// BANDASTATION ADDITION END
+
 ///Emagged/Syndicate NtOS (SyndiOS) PDA theme
 #define PDA_THEME_SYNDICATE "syndicate"
+
 //Maintenance-loot themes: you only need to get them once for them to be available on future rounds
 #define PDA_THEME_CAT "ntos_cat"
 #define PDA_THEME_LIGHT_MODE "ntos_lightmode"
@@ -114,6 +116,7 @@
 #define PDA_THEME_HACKERMAN "hackerman"
 #define PDA_THEME_ROULETTE "cardtable"
 #define PDA_THEME_ABDUCTOR "abductor"
+
 /**
  * Database IDs for unlockable themes (just maintenance-loot for now).
  * Distinct from declarations for both theme and name because having to retroactively change DB IDs is bad
@@ -125,6 +128,7 @@
 #define PDA_THEME_ID_HACKERMAN "hackerman"
 #define PDA_THEME_ID_ROULETTE "cardtable"
 #define PDA_THEME_ID_ABDUCTOR "abductor"
+
 //Defines for the names of all the themes
 #define PDA_THEME_NTOS_NAME "NtOS"
 #define PDA_THEME_DARK_MODE_NAME "NtOS Dark Mode"
@@ -139,21 +143,13 @@
 #define PDA_THEME_ROULETTE_NAME "Roulette Table"
 #define PDA_THEME_ABDUCTOR_NAME "Alien"
 #define PDA_THEME_BIRD_NAME "Bird"
-// BANDASTATION ADDITION START - KSSP PDA theme
 #define PDA_THEME_KSSP_NAME "КССП"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - TSF PDA theme
 #define PDA_THEME_TSF_NAME "ТСФ"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - SKRELLIAN_EMPIRE PDA theme
 #define PDA_THEME_SKRELLIAN_EMPIRE_NAME "Скреллианская Империя"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - ELYSIUM PDA theme
-#define PDA_THEME_ELYSIUM_NAME "Республика Элизиум"
-// BANDASTATION ADDITION END
-// BANDASTATION ADDITION START - FREEDOM PDA theme
+#define PDA_THEME_ELYSIUM_NAME "Элизиум"
 #define PDA_THEME_FREEDOM_NAME "Вольные секторы"
-// BANDASTATION ADDITION END
+
+
 ///List of PDA themes that are accessible to everyone by default.
 GLOBAL_LIST_INIT(default_pda_themes, list(
 	PDA_THEME_NTOS_NAME = PDA_THEME_NTOS,
@@ -162,18 +158,13 @@ GLOBAL_LIST_INIT(default_pda_themes, list(
 	PDA_THEME_SYNTH_NAME = PDA_THEME_SYNTH,
 	PDA_THEME_TERMINAL_NAME = PDA_THEME_TERMINAL,
 	PDA_THEME_BIRD_NAME = PDA_THEME_BIRD,
-	// BANDASTATION ADDITION START - TSF PDA theme
 	PDA_THEME_TSF_NAME = PDA_THEME_TSF,
-	// BANDASTATION ADDITION END
-	// BANDASTATION ADDITION - KSSP PDA theme
 	PDA_THEME_KSSP_NAME = PDA_THEME_KSSP,
-	// BANDASTATION ADDITION - SKRELLIAN_EMPIRE PDA theme
 	PDA_THEME_SKRELLIAN_EMPIRE_NAME = PDA_THEME_SKRELLIAN_EMPIRE,
-	// BANDASTATION ADDITION - ELYSIUM PDA theme
 	PDA_THEME_ELYSIUM_NAME = PDA_THEME_ELYSIUM,
-	// BANDASTATION ADDITION - FREEDOM PDA theme
 	PDA_THEME_FREEDOM_NAME = PDA_THEME_FREEDOM,
 ))
+
 ///List of PDA themes that are accessible to everyone by default.
 GLOBAL_LIST_INIT(pda_name_to_theme, list(
 	PDA_THEME_NTOS_NAME = PDA_THEME_NTOS,
@@ -189,18 +180,13 @@ GLOBAL_LIST_INIT(pda_name_to_theme, list(
 	PDA_THEME_ROULETTE_NAME = PDA_THEME_ROULETTE,
 	PDA_THEME_ABDUCTOR_NAME = PDA_THEME_ABDUCTOR,
 	PDA_THEME_BIRD_NAME = PDA_THEME_BIRD,
-	// BANDASTATION ADDITION START - TSF PDA theme
 	PDA_THEME_TSF_NAME = PDA_THEME_TSF,
-	// BANDASTATION ADDITION END
-	// BANDASTATION ADDITION - KSSP PDA theme
 	PDA_THEME_KSSP_NAME = PDA_THEME_KSSP,
-	// BANDASTATION ADDITION - SKRELLIAN_EMPIRE PDA theme
 	PDA_THEME_SKRELLIAN_EMPIRE_NAME = PDA_THEME_SKRELLIAN_EMPIRE,
-	// BANDASTATION ADDITION - ELYSIUM PDA theme
 	PDA_THEME_ELYSIUM_NAME = PDA_THEME_ELYSIUM,
-	// BANDASTATION ADDITION - FREEDOM PDA theme
 	PDA_THEME_FREEDOM_NAME = PDA_THEME_FREEDOM,
 ))
+
 ///List of unlockable PDA themes, keyed by their database ID.
 GLOBAL_LIST_INIT(pda_id_to_name, list(
 	PDA_THEME_ID_CAT = PDA_THEME_CAT_NAME,

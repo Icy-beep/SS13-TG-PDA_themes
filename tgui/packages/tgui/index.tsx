@@ -6,13 +6,10 @@
 
 // Themes
 import './styles/main.scss';
-import './styles/themes/KSSP.scss'; // BANDASTATION ADDITION - KSSP PDA theme
-import './styles/themes/TSF.scss'; // BANDASTATION ADDITION - TSF PDA theme
-import './styles/themes/SKRELLIAN_EMPIRE.scss'; // BANDASTATION ADDITION - SKRELLIAN_EMPIRE PDA theme
-import './styles/themes/ELYSIUM.scss'; // BANDASTATION ADDITION - ELYSIUM PDA theme
-import './styles/themes/FREEDOM.scss'; // BANDASTATION ADDITION - FREEDOM PDA theme
+import './styles/themes/national-pda.scss';
 import './styles/themes/paper220.scss';
 import './styles/themes/ss220.scss';
+
 import { setupGlobalEvents } from 'tgui-core/events';
 import { setupHotKeys } from 'tgui-core/hotkeys';
 import { captureExternalLinks } from 'tgui-core/links';
@@ -22,6 +19,7 @@ import { setDebugHotKeys } from './debug/use-debug';
 import { bus } from './events/listeners';
 import { render } from './renderer';
 import { createStackAugmentor } from './stack';
+
 function setupApp() {
   // Delay setup
   if (document.readyState === 'loading') {
@@ -38,6 +36,7 @@ function setupApp() {
     verbParamsFn: (verb, key) => `${verb} "${key}" 0 0 0 0`,
   });
   captureExternalLinks();
+
   Byond.subscribe((type, payload) => bus.dispatch({ type, payload }));
 
   render(<App />);
